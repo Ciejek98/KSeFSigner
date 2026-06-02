@@ -44,8 +44,8 @@ INPUT XML (replace {challenge} and {nip}):
 
 	<ItemGroup>
 		<PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.3" />
-		<None Include="LICENSE.txt" Pack="true" PackagePath="\" />
-		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>
