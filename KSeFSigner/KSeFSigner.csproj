@@ -5,6 +5,8 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<RepositoryUrl>https://github.com/Ciejek98/KSeFSigner</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
 		<PackageId>KSeFSigner</PackageId>
 		<Authors>Piotr Maciejek</Authors>
 		<Version>1.0.0</Version>
@@ -36,10 +38,14 @@ INPUT XML (replace {challenge} and {nip}):
 		<PackageTags>KSeF;XAdES;ECDSA;XML;Signature;X509;Certificate;dotnet8</PackageTags>
 		<Company></Company>
 		<Copyright>Copyright © 2026 Piotr Maciejek</Copyright>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.3" />
+		<None Include="LICENSE.txt" Pack="true" PackagePath="\" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
