@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>KSeFSigner</PackageId>
+		<Authors>Piotr Maciejek</Authors>
+		<Version>1.0.0</Version>
+		<Description>
+KSeFSigner is an unofficial .NET 8 workaround for signing XML documents (AuthTokenRequest) in XAdES-BES format for KSeF API 2.0 (Polish National e-Invoicing System). Addresses the ECDSA-SHA256 support gap in .NET 8.
+
+FEATURES:
+* XAdESSigner.Sign(xml, certificate) - sign using X509Certificate2 object
+* XAdESSigner.Sign(xml, certContent, keyContent, keyPassword) - sign using raw strings
+* XAdESSigner.Sign(xml, certContent, keyContent, securePassword) - sign using SecureString password
+* CertificateLoader.Load(certContent, keyContent, keyPassword) - load X509Certificate2 from strings
+* CertificateLoader.Load(certContent, keyContent, securePassword) - load X509Certificate2 using SecureString password
+* Built-in ECDSA-SHA256 registration for SignedXml
+* SecureString support for password handling - password is zeroed from memory after use
+
+REQUIREMENTS:
+* .NET 8 (net8.0-windows)
+* ECDSA P-256 certificate from KSeF Certification Center (CCK MF)
+SecureString support for password handling - password is zeroed from memory after use
+
+INPUT XML (replace {challenge} and {nip}):
+&lt;AuthTokenRequest xmlns="http://ksef.mf.gov.pl/auth/token/2.0"&gt;
+&lt;Challenge&gt;{challenge}&lt;/Challenge&gt;
+&lt;ContextIdentifier&gt;&lt;Nip&gt;{nip}&lt;/Nip&gt;&lt;/ContextIdentifier&gt;
+&lt;SubjectIdentifierType&gt;certificateSubject&lt;/SubjectIdentifierType&gt;
+&lt;/AuthTokenRequest&gt;
+		</Description>
+		<PackageTags>KSeF;XAdES;ECDSA;XML;Signature;X509;Certificate;dotnet8</PackageTags>
+		<Company></Company>
+		<Copyright>Copyright © 2026 Piotr Maciejek</Copyright>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.3" />
+  </ItemGroup>
+
+</Project>
