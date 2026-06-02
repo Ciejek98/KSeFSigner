@@ -19,6 +19,7 @@ FEATURES:
 * CertificateLoader.Load(certContent, keyContent, securePassword) - load X509Certificate2 using SecureString password
 * Built-in ECDSA-SHA256 registration for SignedXml
 * SecureString support for password handling - password is zeroed from memory after use
+* Works with UiPath
 
 REQUIREMENTS:
 * .NET 8 (net8.0-windows)

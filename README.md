@@ -20,7 +20,7 @@ FEATURES:
 
 \* SecureString support for password handling - password is zeroed from memory after use
 
-\* Works with UiPath
+\* Works with UiPath!
 
 
 
