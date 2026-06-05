@@ -2,7 +2,7 @@
 
 KSeFSigner is an unofficial .NET 8 workaround for signing XML documents (AuthTokenRequest) in XAdES-BES format for KSeF API 2.0 (Polish National e-Invoicing System). Addresses the ECDSA-SHA256 support gap in .NET 8.
 
-
+Feel free to open an [issue](https://github.com/Ciejek98/KSeFSigner/issues) to report bugs or request new features.
 
 FEATURES:
 
