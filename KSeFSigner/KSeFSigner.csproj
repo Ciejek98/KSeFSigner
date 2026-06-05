@@ -41,6 +41,14 @@ INPUT XML (replace {challenge} and {nip}):
 		<Copyright>Copyright © 2026 Piotr Maciejek</Copyright>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>
+1.0.1
+- Changes in csproj - tags,projectUrl, description, added relasenots
+- Updated README
+
+1.0.0
+- Initial release
+		</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
