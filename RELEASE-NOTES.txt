@@ -1,0 +1,8 @@
+1.0.1
+- Changes in csproj:
+	- tags,projectUrl, description, added relasenots
+	- Updated README
+	- Added RELEASE-NOTES file
+
+1.0.0
+- Initial release
